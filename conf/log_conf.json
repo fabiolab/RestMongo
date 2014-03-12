@@ -1,0 +1,8 @@
+{
+    "level":"debug",
+    "dir":"/var/log/ws-rubriques/",
+    "log_file":"ws-rubriques.log",
+    "exception_file":"ws-rubriques-exceptions.log",
+    "max_size":100000,
+    "max_files":5
+}

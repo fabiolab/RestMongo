@@ -1,0 +1,68 @@
+[
+   	{
+		"version" : "1.0.0",
+		"comment" : ["First stable version"],
+		"date" : "2014-03-12",
+		"author" : "Fabrice Depaulis"
+	},
+   	{
+		"version" : "0.5.3",
+		"comment" : ["Adding Warn logs to 404 code","Adding error logs to 500 code"],
+		"date" : "2013-10-07",
+		"author" : "Fabrice Depaulis"
+	},
+	{
+		"version" : "0.5.2",
+		"comment" : ["Adding the ws name to the forbidden routes (put, post, delete) and unhandled routes"],
+		"date" : "2013-10-04",
+		"author" : "Fabrice Depaulis"
+	},
+	{
+		"version" : "0.5.1",
+		"comment" : ["Splitting the conf file for a separated log one"],
+		"date" : "2013-10-04",
+		"author" : "Fabrice Depaulis"
+	},
+	{
+		"version" : "0.5.0",
+		"comment" : ["Adding log management with Winston module"],
+		"date" : "2013-10-04",
+		"author" : "Fabrice Depaulis"
+	},
+	{
+		"version" : "0.4.0",
+		"comment" : ["Distinct between find and findOne methods to deal both list and single objects"],
+		"date" : "2013-10-03",
+		"author" : "Fabrice Depaulis"
+	},    
+    {
+		"version" : "0.3.1",
+		"comment" : ["[Defect] Login and password taken into account for mongo db connection"],
+		"date" : "2013-10-01",
+		"author" : "Fabrice Depaulis"
+	},    
+   	{
+		"version" : "0.3.0",
+		"comment" : ["Paginated results with query string parameters (skip & limit) for FIND methods only. Usage : url/path?start=value&limit=" ],
+		"date" : "2013-09-30",
+		"author" : "Fabrice Depaulis"
+	},    
+	{
+		"version" : "0.2.0",
+		"comment" : ["Modularisation of mongosearch module","Documentation handled in a class" ],
+		"date" : "2013-09-27",
+		"author" : "Fabrice Depaulis"
+	},
+	{
+		"version" : "0.1.0",
+		"comment" : ["Add generic rest call for mongodb"],
+		"date" : "2013-09-20",
+		"author" : "Fabrice Depaulis"
+	},
+	{
+		"version" : "0.0.1",
+		"comment" : ["First version"],
+		"date" : "2013-09-14",
+		"author" : "Fabrice Depaulis"
+	}
+]

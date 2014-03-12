@@ -1,0 +1,64 @@
+[
+    {
+        "name":"List rubriques",
+        "description":"Get a list of all rubriques",
+        "path":"/rubriques",
+        "mongoQuery":{
+            "method":"find",
+            "query":{
+                "criteria":{
+                    
+                },
+                "projection":{
+                    "_id":0
+                }
+            }
+        }
+    },
+    {
+        "name":"Rubrique by code",
+        "description":"Get a rubrique by its an9 code",
+        "path":"/rubrique/:an9",
+        "mongoQuery":{
+            "method":"findOne",
+            "query":{
+                "criteria":{
+                    "code_AN9":"@an9@"
+                },
+                "projection":{
+                    "_id":0
+                }
+            }
+        }
+    },
+    {
+        "name":"Rubrique by code an8",
+        "description":"Get a rubrique by its an8 code",
+        "path":"/rubrique/by_code_an8/:an8",
+        "mongoQuery":{
+            "method":"findOne",
+            "query":{
+                "criteria":{
+                    "code_AN8":"@an8@"
+                },
+                "projection":{
+                    "_id":0
+                }
+            }
+        }
+    },
+    {
+        "name":"List segments",
+        "description":"Get a list of all segments",
+        "path":"/segments",
+        "mongoQuery":{
+            "method":"distinct",
+            "query":{
+                "field":"segment",
+                "criteria":{
+                    
+                }
+            }
+        }
+    }
+]

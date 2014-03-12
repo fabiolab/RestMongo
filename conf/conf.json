@@ -1,0 +1,10 @@
+{
+    "port":"8070",
+    "mongo":{
+        "server":"mongo02t.bbo1t.local:27026",
+        "base":"ACTIVITE",
+        "collection":"rubriques20140217",
+        "user":"activite",
+        "password":"passactivite"
+    }
+}
