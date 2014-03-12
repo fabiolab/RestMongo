@@ -14,38 +14,40 @@ RestMongo aims to add a Rest API layer on a MongoDB collection. This is built to
 With RestES you have only to declare a route and a matching elasticsearch query in the "routes.json" file.
 
 Example of routes.json file, addressing a collection of "Rubriques" (Activities)
-```{
-        "name":"List rubriques",
-        "description":"Get a list of all rubriques",
-        "path":"/rubriques",
-        "mongoQuery":{
-            "method":"find",
-            "query":{
-                "criteria":{
-                    
-                },
-                "projection":{
-                    "_id":0
-                }
-            }
+```javascript
+{
+"name":"List rubriques",
+"description":"Get a list of all rubriques",
+"path":"/rubriques",
+"mongoQuery":{
+    "method":"find",
+    "query":{
+        "criteria":{
+            
+        },
+        "projection":{
+            "_id":0
         }
-    },
-    {
-        "name":"Rubrique by code",
-        "description":"Get a rubrique by its an9 code",
-        "path":"/rubrique/:an9",
-        "mongoQuery":{
-            "method":"findOne",
-            "query":{
-                "criteria":{
-                    "code_AN9":"@an9@"
-                },
-                "projection":{
-                    "_id":0
-                }
-            }
+    }
+}
+},
+{
+"name":"Rubrique by code",
+"description":"Get a rubrique by its an9 code",
+"path":"/rubrique/:an9",
+"mongoQuery":{
+    "method":"findOne",
+    "query":{
+        "criteria":{
+            "code_AN9":"@an9@"
+        },
+        "projection":{
+            "_id":0
         }
-    }```
+    }
+}
+}
+```
 
 This makes the following url available :
 * http://localhost/rubriques : returns a list of activities
